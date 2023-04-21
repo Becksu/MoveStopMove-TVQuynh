@@ -13,17 +13,17 @@ public class PatrolState : IStateMachine
 
         randomTimer = Random.Range(2f, 4f);
         target = new Vector3(Random.Range(-24f, 24f), 0, Random.Range(-24f, 24f));
+        bot.Move(target);
     }
 
     public void OnExcute(Bot bot)
     {
         timer += Time.deltaTime;
-        if (timer<randomTimer)
+        if (bot.GetCharacter()&&timer>2.5f)
         {
-            bot.Move(target);
+            bot.ChangState(new AtackState());
         }
-
-        else
+        if(timer > randomTimer||Vector3.Distance(bot.tF.position,target)<0.1f)
         {
             bot.ChangState(new IdleState());
         }

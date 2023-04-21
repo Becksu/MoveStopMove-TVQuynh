@@ -17,6 +17,8 @@ public class UIGamePlay : UICanvas
     }
     public void OnClickSetting()
     {
+        Time.timeScale = 0;
         CloseDirectly();
+        UIManager.Ins.OpenUI<UIPause>();
     }
 }

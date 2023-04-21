@@ -1,8 +1,17 @@
 public enum WeaponType
 {
     bullet,
-    sword,
-    bomerang
+    bomerang,
+    sword
+}
+public enum ColorCharacter
+{
+    Blue,
+    Red,
+    Green,
+    Yeallow,
+    Pink,
+    Black
 }
 public class Constans
 {
@@ -13,7 +22,12 @@ public class Constans
     public const string ANIM_DANCE = "dance";
     public const string TAG_PLAYER = "Player";
     public const string TAG_ENEMY = "Enemy";
+    public const string TAG_COLLIDERBOX = "BoxCollider";
 
+    public const string AUDIOSFXDIE = "AudioSFXDie";
+    public const string AUDIOSFXATACK = "AudioSFXAtack";
+    public const string AUDIOSFXWIN = "AudioSFXWin";
+    public const string AUDIOSFXLOSE = "AudioSFXLose";
     public static PoolType GetWeaponType(WeaponType type)
     {
         switch (type)
@@ -28,7 +42,5 @@ public class Constans
                 return PoolType.None;
         }
     }
-
-
 }
 

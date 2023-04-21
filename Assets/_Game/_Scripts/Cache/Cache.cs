@@ -4,16 +4,24 @@ using System;
 
 public static class Cache
 {
-    public static Dictionary<System.Type, Component> diction = new Dictionary<Type, Component>();
+    public static Dictionary<Collider, Character> dictionPlayer = new Dictionary<Collider, Character>();
 
-    public static T GetComponent<T>(GameObject gameObject) where T : Component
+    public static Character GetCharacter(Collider collider)
     {
-        System.Type type = typeof(T);
-        if (!diction.ContainsKey(type))
+        if (!dictionPlayer.ContainsKey(collider))
         {
-            T component = gameObject.GetComponent<T>();
-            diction.Add(type, component);
+            dictionPlayer.Add(collider,collider.GetComponent<Character>());
         }
-        return (T)diction[type];
+        return dictionPlayer[collider];
+    }
+
+    public static Dictionary<Collider, Collider> collider = new Dictionary<Collider, Collider>();
+    public static Collider GetCollider(Collider other)
+    {
+        if (!collider.ContainsKey(other))
+        {
+            collider.Add(other, other.GetComponent<Collider>());
+        }
+        return collider[other];
     }
 }

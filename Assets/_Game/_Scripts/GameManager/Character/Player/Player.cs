@@ -7,12 +7,15 @@ public class Player : Character
     public JoystickController joystick;
     public Rigidbody rb;
     public float speed;
+    public GameObject PointHair;
+    public GameObject PointSheld;
+
 
     protected override void OnInit()
     {
         base.OnInit();
         joystick =  Instantiate(joystick, transform);
-        rb = Cache.GetComponent<Rigidbody>(gameObject);
+        rb = GetComponent<Rigidbody>();
         ChangAnim(Constans.ANIM_IDLE);
     }
 
@@ -44,10 +47,6 @@ public class Player : Character
             }
         }
     }
-    protected override void OnFixUpdate()
-    {
-
-    }
     public override void Atack()
     {
         base.Atack();
@@ -66,6 +65,7 @@ public class Player : Character
     {
         base.Death();
         rb.velocity = Vector3.zero;
+        LevelManager.Ins.LoseGame();
     }
 
 }

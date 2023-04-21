@@ -21,7 +21,6 @@ public class Bullet : Weapon
         tF.Translate(direction * speed * Time.deltaTime);
         float distance = Vector3.Distance(tF.position, target);
         target.y = tF.position.y;
-        Debug.Log(target);
         if (distance > 0.1f) return;
         SimplePool.Despawn(this);
         bulletModel.rotation = Quaternion.LookRotation(direction);

@@ -51,25 +51,23 @@ public class Bot : Character
         meshAgent.SetDestination(target);
         tF.rotation = Quaternion.LookRotation(target);
         meshAgent.isStopped = false;
-        if (!attacker.GetCharacterRange()) return;
-        ChangState(new AtackState());
+      //  if (!attacker.GetCharacterRange()) return;
+        //ChangState(new AtackState());
     }
     public override void Atack()
     {
-        base.Atack();
         meshAgent.isStopped = true;
+        base.Atack();
+
     }
     public void StopMove()
     {
         meshAgent.isStopped = true;
         ChangAnim(Constans.ANIM_IDLE);
-        if (!attacker.GetCharacterRange()) return;
-        ChangState(new AtackState());
     } 
     public override void Death()
     {
         base.Death();
-        meshAgent.isStopped = true;
         meshAgent.enabled = false;
         meshAgent.transform.rotation = Quaternion.identity;
     }

@@ -14,7 +14,7 @@ public class AtackState : IStateMachine
     public void OnExcute(Bot bot)
     {
         timer += Time.deltaTime;
-        if (timer > 1f)
+        if (timer > 2f)
         {
             bot.ChangState(new PatrolState());
         }

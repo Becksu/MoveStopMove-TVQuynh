@@ -14,62 +14,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InforUI:
   - ListInforTab:
+    - idIcon: 0
+      icon: {fileID: 21300000, guid: 17f6b5c70d7297742b6765117dc5ab44, type: 3}
+      price: 100
+      prefab: {fileID: 526634471473917589, guid: 751936fd3ef01b24bbc8e960211c294b, type: 3}
+      material: {fileID: 0}
     - idIcon: 1
-      icon: {fileID: 21300000, guid: 940f72f476e3ef34791e0f24fed0cb3e, type: 3}
+      icon: {fileID: 21300000, guid: b75bee2b89a2fb543ab10a17353e61bd, type: 3}
+      price: 300
+      prefab: {fileID: 526634471473917589, guid: 4206c2c904253d54f97a54a5b3829df6, type: 3}
+      material: {fileID: 0}
     - idIcon: 2
-      icon: {fileID: 21300000, guid: 56a23fc71b520734e9bbf911775b4058, type: 3}
+      icon: {fileID: 21300000, guid: 53eaeddf7e334b144a4cc14c290245b6, type: 3}
+      price: 250
+      prefab: {fileID: 526634471473917589, guid: af18aa0cf7c6b6b46b2fc138a1f70dc5, type: 3}
+      material: {fileID: 0}
     - idIcon: 3
-      icon: {fileID: 21300000, guid: 2da24dd3ec3e4bc4ba1ece63c146c2d1, type: 3}
+      icon: {fileID: 21300000, guid: 90950044dc01c8a4dadc07fb59fd35cd, type: 3}
+      price: 600
+      prefab: {fileID: 526634471473917589, guid: 5049286fb9cfad546a94482e14feb878, type: 3}
+      material: {fileID: 0}
     - idIcon: 4
-      icon: {fileID: 21300000, guid: b7b9fd76034527e4480f5656383f8c97, type: 3}
-    - idIcon: 5
-      icon: {fileID: 21300000, guid: 339c36e7bb99a51498928de75e8d45a8, type: 3}
+      icon: {fileID: 21300000, guid: 284193bd8ee9bff4584c8d85b6bb14b8, type: 3}
+      price: 130
+      prefab: {fileID: 526634471473917589, guid: 2e3d48deda7ba7e409e873d787334cbc, type: 3}
+      material: {fileID: 0}
   - ListInforTab:
+    - idIcon: 0
+      icon: {fileID: 21300000, guid: 512e4b27759921c4ab18297659acb1ac, type: 3}
+      price: 85
+      prefab: {fileID: 0}
+      material: {fileID: 2100000, guid: 202e6f185a580f441918eb4a739840b5, type: 2}
     - idIcon: 1
-      icon: {fileID: 21300000, guid: 71cc73ceea147414092ff20146022264, type: 3}
+      icon: {fileID: 21300000, guid: 98919c0480a550340b39eec6774af2c9, type: 3}
+      price: 30
+      prefab: {fileID: 0}
+      material: {fileID: 2100000, guid: 1e37e59990490c44daaaecf8707fd21e, type: 2}
     - idIcon: 2
-      icon: {fileID: 21300000, guid: 40cad17444efafe488b01a6d714600a9, type: 3}
+      icon: {fileID: 21300000, guid: 627fc7155572acc4b81f8f7c55d00767, type: 3}
+      price: 50
+      prefab: {fileID: 0}
+      material: {fileID: 2100000, guid: e3f0f6ebb376397499e36fbcf4c937e1, type: 2}
     - idIcon: 3
-      icon: {fileID: 21300000, guid: 2da24dd3ec3e4bc4ba1ece63c146c2d1, type: 3}
+      icon: {fileID: 21300000, guid: e8bc66e97a75fdd438512ce974a57141, type: 3}
+      price: 60
+      prefab: {fileID: 0}
+      material: {fileID: 2100000, guid: 161f67a1fa131a946af6057ef1c51745, type: 2}
     - idIcon: 4
-      icon: {fileID: 21300000, guid: 6c6bcd4775e2e3d409c0449247b715ee, type: 3}
+      icon: {fileID: 21300000, guid: 570a295cdb9974a4fbbbbfb64760c075, type: 3}
+      price: 120
+      prefab: {fileID: 0}
+      material: {fileID: 2100000, guid: ab8eecff63591aa4fa8ab7c0cffe6db1, type: 2}
     - idIcon: 5
-      icon: {fileID: 21300000, guid: 339c36e7bb99a51498928de75e8d45a8, type: 3}
-    - idIcon: 6
-      icon: {fileID: 21300000, guid: 339c36e7bb99a51498928de75e8d45a8, type: 3}
-    - idIcon: 7
-      icon: {fileID: 21300000, guid: 8595640d9fa637d4489f3807bec56c74, type: 3}
-    - idIcon: 8
-      icon: {fileID: 21300000, guid: 339c36e7bb99a51498928de75e8d45a8, type: 3}
+      icon: {fileID: 21300000, guid: 703ab059af92e5e409cc5dc1f1a2ff72, type: 3}
+      price: 450
+      prefab: {fileID: 0}
+      material: {fileID: 2100000, guid: c6b9832f5696ed1438b01ebc985495c6, type: 2}
   - ListInforTab:
+    - idIcon: 0
+      icon: {fileID: 21300000, guid: 9cd86c9a121a3a74b88bbc7a957a96aa, type: 3}
+      price: 30
+      prefab: {fileID: 2074877811338720723, guid: 97bcf9a7c6c333541a3bb3aec45704f1, type: 3}
+      material: {fileID: 0}
     - idIcon: 1
-      icon: {fileID: 21300000, guid: 805cb7ce29553114a91cd8eca1863cc5, type: 3}
-    - idIcon: 2
-      icon: {fileID: 21300000, guid: 2fb85e3083bcbae45a09bd175f20db7a, type: 3}
-    - idIcon: 3
-      icon: {fileID: 21300000, guid: d6d4326254e80d341b37fe04158d4112, type: 3}
-    - idIcon: 4
-      icon: {fileID: 21300000, guid: b7b9fd76034527e4480f5656383f8c97, type: 3}
-    - idIcon: 5
-      icon: {fileID: 21300000, guid: 339c36e7bb99a51498928de75e8d45a8, type: 3}
-    - idIcon: 6
-      icon: {fileID: 21300000, guid: 339c36e7bb99a51498928de75e8d45a8, type: 3}
-  - ListInforTab:
-    - idIcon: 1
-      icon: {fileID: 21300000, guid: 940f72f476e3ef34791e0f24fed0cb3e, type: 3}
-    - idIcon: 2
-      icon: {fileID: 21300000, guid: b519876a099b1534683a019f1b401fd2, type: 3}
-    - idIcon: 3
-      icon: {fileID: 21300000, guid: 40cad17444efafe488b01a6d714600a9, type: 3}
-    - idIcon: 4
-      icon: {fileID: 21300000, guid: b7b9fd76034527e4480f5656383f8c97, type: 3}
-    - idIcon: 5
-      icon: {fileID: 21300000, guid: 96ae09a41af2aeb48a650bae348b68aa, type: 3}
-    - idIcon: 6
-      icon: {fileID: 21300000, guid: 6c6bcd4775e2e3d409c0449247b715ee, type: 3}
-    - idIcon: 7
-      icon: {fileID: 21300000, guid: 6c6bcd4775e2e3d409c0449247b715ee, type: 3}
-    - idIcon: 8
-      icon: {fileID: 21300000, guid: 6c6bcd4775e2e3d409c0449247b715ee, type: 3}
-    - idIcon: 9
-      icon: {fileID: 21300000, guid: 6c6bcd4775e2e3d409c0449247b715ee, type: 3}
+      icon: {fileID: 21300000, guid: a8bf06d6d27c5d148b982e0ff1d3c519, type: 3}
+      price: 50
+      prefab: {fileID: 2074877811338720723, guid: 778c224c8dcc31d4cb4aa2e53de4608c, type: 3}
+      material: {fileID: 0}
+  - ListInforTab: []

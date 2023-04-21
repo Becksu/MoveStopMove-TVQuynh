@@ -28,14 +28,14 @@ public class Attacker : MonoBehaviour
         }
         if (character.isDie)
         {
-            // listCharacterInRange.Remove(character);
+            listCharacterInRange.Remove(character);
             return null;
         }
         return character;
     }
     private void OnTriggerEnter(Collider other)
     {
-        Character character = other.GetComponent<Character>();
+        Character character = Cache.GetCharacter(other);
         if (other.CompareTag(Constans.TAG_ENEMY) || other.CompareTag(Constans.TAG_PLAYER))
         {
             if (character.isDie)
@@ -51,7 +51,7 @@ public class Attacker : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        Character character = other.GetComponent<Character>();
+        Character character = Cache.GetCharacter(other);
         if (other.CompareTag(Constans.TAG_ENEMY) || other.CompareTag(Constans.TAG_PLAYER))
         {
             listCharacterInRange.Remove(character);

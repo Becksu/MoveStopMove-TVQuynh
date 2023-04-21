@@ -138,7 +138,8 @@ public class ParticleAmount
 
 public enum ParticleType
 {
-    Hit
+    Hit,
+    AddScore
 }
 
 public enum PoolType
